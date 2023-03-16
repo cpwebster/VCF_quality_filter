@@ -8,4 +8,4 @@ The following commands and script calculate and display statistics for a raw VCF
 #This script displays the summary statistics (previously calculated) in a series of plots.
 
 # vcf_filter.txt
-#This document contains a command to filter a raw VCF for quality, depth, and missingness at specified thresholds.
+#This document contains a command that utilizes VCFtools (Danecek et al., 2011) to filter a raw VCF for quality, depth, and missingness at specified thresholds.
