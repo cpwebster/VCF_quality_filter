@@ -1,0 +1,16 @@
+# Filtering and handling VCFs- the following commands, utilizing VCFtools (Danecek et al., 2011), are most efficient when run on an HPC. These commands are give summary statistics of a raw VCF, and are intended for establishing filtering parameters.
+
+# Coverage individual
+vcftools --vcf <your_vcf_here.vcf> --depth --out <define_output_file_here>
+
+# Coverage site
+vcftools --vcf <your_vcf_here.vcf> --site-mean-depth --out <define_output_file_here>
+
+# Quality score
+vcftools --vcf <your_vcf_here.vcf> --site-quality --out <define_output_file_here>
+
+# Missing data individual
+vcftools --vcf <your_vcf_here.vcf> --missing-indv --out <define_output_file_here>
+
+# Missing data site
+vcftools --vcf <your_vcf_here.vcf> --missing-site --out <define_output_file_here>

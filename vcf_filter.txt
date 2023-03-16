@@ -1,0 +1,12 @@
+# The following command calls VCFtools (Danecek et al., 2011) and filters at specified quality, 
+# missingness, and depth. Then, it creates a new (recode) filtered VCF file. For larger VCFs
+# (>3GB) use an HPC- you'll crash your local computer...
+
+# Example:
+#vcftools --vcf for_example.vcf --minQ 20 --max-missing 0.9 --min-#meanDP 15 --max-meanDP 50 --recode --recode-INFO-all --out example_output_file
+
+vcftools --vcf <your_vcf_file_here>.vcf --minQ <min qual threshold> --max-missing <max_missing_threshold> --min-meanDP <min DP threshold> --max-meanDP <max DP threshold> --recode --recode-INFO-all --out <specify_output_file_here>
+
+
+
+
