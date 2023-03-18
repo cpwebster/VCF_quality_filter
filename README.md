@@ -5,6 +5,7 @@ The following commands and scripts calculate and display statistics for a raw VC
 
 This script calls VCFtools (Danecek et al., 2011) and calculates summary statistics for a raw VCF.
 Statistics calculated: coverage, quality, missingness.
+
 Usage: bash calc_vcf_sum_stats.bash <input_vcf> <output_file_prefix>
 
 #display_vcf_sum_stats.R:
