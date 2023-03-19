@@ -1,4 +1,4 @@
-# vcf_quality_filter
+# VCF_quality_filter
 The following commands and scripts calculate and display statistics for a raw VCF, then filters the VCF for quality, depth, and missingness at given thresholds.
 
 #calc_vcf_sum_stats.txt:
