@@ -4,6 +4,8 @@ library(tidyverse)
 #once VCFtools has been used to calculate those statistics. Metrics
 #can then be used to filter VCF for quality, depth, and missingness.
 
+#Every line that reads in a file includes the needed file extension.
+
 
 
 # [========================]
