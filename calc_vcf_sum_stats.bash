@@ -8,13 +8,29 @@
 # [-------------]
 #     USAGE:
 # [-------------]
-# bash calc_vcf_sum_stats.bash <input_vcf> <output_file_prefix>
+# bash calc_vcf_sum_stats.bash -v <input_vcf> -o <output_file_prefix>
 
 # ------------
 # Arguments
 # ------------
-input_vcf=$1
-output_file_prefix=$2
+while getopts ":v:o:" opt; do
+  case ${opt} in
+
+# Input VCF argument
+    v ) input_vcf="$OPTARG"
+      ;;
+
+# Output file prefix argument
+    o ) output_file_prefix="$OPTARG"
+      ;;
+
+    \? ) echo "Invalid option: -$OPTARG" 1>&2
+      ;;
+    : ) echo "Option -$OPTARG requires an argument." 1>&2
+      ;;
+
+  esac
+done
 
 # -------------
 # Begin script
