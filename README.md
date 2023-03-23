@@ -1,6 +1,11 @@
 # VCF_quality_filter
 The following commands and scripts calculate and display statistics for a raw VCF, then filters the VCF for quality, depth, and missingness at given thresholds.
 
+Intended workflow:
+1) calc_vcf_sum_stats.bash
+2) display_vcf_sum_stats.R
+3) vcf_filter.txt
+
 #calc_vcf_sum_stats.bash:
 
 This script calls VCFtools (Danecek et al., 2011) and calculates summary statistics for a raw VCF.
@@ -16,7 +21,3 @@ This script displays the summary statistics (previously calculated) in a series 
 
 This document contains a command that utilizes VCFtools (Danecek et al., 2011) to filter a raw VCF for quality, depth, and missingness at specified thresholds.
 
-Intended workflow:
-1) calc_vcf_sum_stats.bash
-2) display_vcf_sum_stats.R
-3) vcf_filter.txt
